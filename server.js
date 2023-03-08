@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 }
 );
 
-app.use( notFound );
+app.use('*', notFound );
 
 function start(port) {
     app.listen(port, () => console.log(`Listening on port ${port}`));
