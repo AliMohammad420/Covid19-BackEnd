@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = (sequelize, DataTypes) =>
- sequelize.define('covid', {
+ sequelize.define("covid", {
   country: {
    type: DataTypes.STRING,
    allowNull: false,
